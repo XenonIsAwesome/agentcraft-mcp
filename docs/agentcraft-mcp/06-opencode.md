@@ -1,7 +1,7 @@
-# Step 5: Full OpenCode support
+# Step 6: Full OpenCode support
 
-Status: planned. Depends on [step 4](04-executable.md).
-[Overview](README.md) · [Next](06-codex.md)
+Status: planned. Depends on [step 5](05-executable.md).
+[Overview](README.md) · [Next](07-codex.md)
 
 ## Outcome
 

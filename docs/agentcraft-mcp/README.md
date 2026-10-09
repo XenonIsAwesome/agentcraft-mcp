@@ -21,10 +21,11 @@ is idle; they do not implement a second scheduler or a second set of tools.
 | 1 | [Generic MCP](01-generic-mcp.md) | Harness-neutral server, external jobs, and repository tools; usable through manual invocation and bounded waiting |
 | 2 | [Claude channel integration](02-claude-channel.md) | Full Claude Code support, including automatic wake-up and `/agentcraft` |
 | 3 | [User-custom adapters](03-custom-adapters.md) | Versioned TypeScript adapter API; Claude integration uses the same contract |
-| 4 | [AgentCraft executable](04-executable.md) | Cross-platform `agentcraft` command to launch Minecraft and Foreman and configure connections |
-| 5 | [Full OpenCode support](05-opencode.md) | Existing OpenCode sessions receive work through their session API |
-| 6 | [Full Codex support](06-codex.md) | A user-visible Codex session shares a reachable app-server with the adapter |
-| 7 | [Full Antigravity support](07-antigravity.md) | Antigravity 2.0 sidecar wakes the selected conversation |
+| 4 | [In-game customization](04-customization.md) | Configure presets and accent colors through `/agentcraft customize`; grayscale assets use runtime tinting |
+| 5 | [AgentCraft executable](05-executable.md) | Cross-platform `agentcraft` command to launch Minecraft and Foreman and configure connections |
+| 6 | [Full OpenCode support](06-opencode.md) | Existing OpenCode sessions receive work through their session API |
+| 7 | [Full Codex support](07-codex.md) | A user-visible Codex session shares a reachable app-server with the adapter |
+| 8 | [Full Antigravity support](08-antigravity.md) | Antigravity 2.0 sidecar wakes the selected conversation |
 
 Implement in this order. Step 2 must work without waiting for the custom adapter framework
 or executable. Later steps reuse the tools, job protocol, and lifecycle established first.
@@ -91,6 +92,14 @@ characters sequentially. Multiple attached sessions enable real parallel executi
 Native harness subagents can later become separate registered connections; they must
 claim ordinary Foreman jobs. Do not pretend a single conversation provides independent
 parallel workers or independent reviewer context.
+
+### Appearance is independent of the harness
+
+Step 4 makes the current Claude/orange styling a selectable preset. Users choose a
+theme and accent in game through `/agentcraft customize`; white/grayscale sprites
+and decorative masks receive runtime tint, preserving shading without per-theme
+texture sets. Appearance is client-local and works without Foreman. Connecting a
+different harness never silently changes the selected theme.
 
 ### Foreman remains authoritative
 

@@ -1,7 +1,7 @@
 # Step 3: User-custom TypeScript wake-up adapters
 
 Status: planned. Depends on [step 2](02-claude-channel.md).
-[Overview](README.md) · [Next](04-executable.md)
+[Overview](README.md) · [Next](04-customization.md)
 
 ## Outcome
 
@@ -103,7 +103,7 @@ Require explicit installation/enabling. Do not auto-execute adapter files found 
 repository, received through MCP, or linked in a task. Resolve file paths deterministically
 and validate the export/API version before starting. Initially use the project's existing
 TypeScript runtime rather than assuming every Node 22 release runs TypeScript directly.
-Step 4 bundles the runner into the executable distribution.
+Step 5 bundles the runner into the executable distribution.
 
 Run user adapters in supervised subprocesses with structured IPC, per-adapter logs,
 startup/shutdown timeouts, crash backoff, and a stop circuit after repeated failures.

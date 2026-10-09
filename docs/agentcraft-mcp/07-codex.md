@@ -1,7 +1,7 @@
-# Step 6: Full Codex support
+# Step 7: Full Codex support
 
-Status: planned. Depends on [step 5](05-opencode.md).
-[Overview](README.md) · [Next](07-antigravity.md)
+Status: planned. Depends on [step 6](06-opencode.md).
+[Overview](README.md) · [Next](08-antigravity.md)
 
 ## Outcome
 

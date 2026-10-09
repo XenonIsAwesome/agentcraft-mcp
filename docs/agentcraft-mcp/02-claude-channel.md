@@ -8,7 +8,7 @@ Status: planned. Depends on [step 1](01-generic-mcp.md).
 Full Claude Code support on explicitly tested surfaces: a user opens their authenticated
 Claude session, invokes `/agentcraft`, and receives subsequent game work automatically.
 AgentCraft does not launch SDK-backed model turns or consume the user's login itself.
-This step must be usable before steps 3 and 4 exist.
+This step must be usable before steps 3–5 exist.
 
 ## Why a channel adapter exists
 

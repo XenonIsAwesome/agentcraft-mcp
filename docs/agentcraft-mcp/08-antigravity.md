@@ -1,6 +1,6 @@
-# Step 7: Full Google Antigravity support
+# Step 8: Full Google Antigravity support
 
-Status: planned. Depends on [step 6](06-codex.md).
+Status: planned. Depends on [step 7](07-codex.md).
 [Overview](README.md)
 
 ## Outcome
@@ -52,7 +52,7 @@ hints using `agentapi`, with explicit argv and no shell interpolation.
 
 The `agentapi` executable is documented as available on the sidecar's PATH. Do not assume
 a generic Foreman subprocess can invoke it. Package the sidecar entry point, SDK/runtime
-dependencies, and validated configuration with the integration assets produced by step 4.
+dependencies, and validated configuration with the integration assets produced by step 5.
 
 Resolve conversation identity through a documented host mechanism. Validate that the
 selected conversation/project is accessible to the sidecar. If the installed surface

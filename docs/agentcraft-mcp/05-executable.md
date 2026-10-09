@@ -1,7 +1,7 @@
-# Step 4: AgentCraft executable and environment launcher
+# Step 5: AgentCraft executable and environment launcher
 
-Status: planned. Depends on [step 3](03-custom-adapters.md).
-[Overview](README.md) · [Next](05-opencode.md)
+Status: planned. Depends on [step 4](04-customization.md).
+[Overview](README.md) · [Next](06-opencode.md)
 
 ## Outcome
 
@@ -37,7 +37,7 @@ in this document are proposed, not currently installed commands.
 
 `connect` prints connection instructions by default and supports an explicit install
 option for merging harness config and command/skill files. It must not rewrite unrelated
-configuration or launch a new inference session. Add later harness targets in steps 5–7.
+configuration or launch a new inference session. Add later harness targets in steps 6–8.
 
 ## Implementation
 
